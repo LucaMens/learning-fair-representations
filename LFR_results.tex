@@ -1,0 +1,19 @@
+\begin{table}
+\caption{Fairness and predictive performance before and after LFR.}
+\label{tab:lfr_results}
+\begin{tabular}{llrrrrr}
+\toprule
+Dataset & Evaluation & DP_Diff & DIR & Consistency & Accuracy & F1 \\
+\midrule
+Adult & Original labels & -0.1994 & 0.3441 & 0.8124 & - & - \\
+Adult & Baseline classifier & -0.1568 & 0.1275 & 0.9628 & 0.8240 & 0.5165 \\
+Adult & LFR classifier & -0.0015 & 0.0000 & 0.9986 & 0.7620 & 0.0083 \\
+German & Original labels & -0.0748 & 0.8966 & 0.7012 & - & - \\
+German & Baseline classifier & -0.0738 & 0.9229 & 0.9430 & 0.7150 & 0.8257 \\
+German & LFR classifier & 0.0000 & 1.0000 & 1.0000 & 0.7000 & 0.8235 \\
+COMPAS & Original labels & 0.1315 & 1.3771 & 0.6504 & - & - \\
+COMPAS & Baseline classifier & 0.2808 & 3.1422 & 0.9778 & 0.6590 & 0.5785 \\
+COMPAS & LFR classifier & 0.0589 & 2.0107 & 0.9816 & 0.5960 & 0.2786 \\
+\bottomrule
+\end{tabular}
+\end{table}
